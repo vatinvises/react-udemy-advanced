@@ -7,10 +7,14 @@ import React, { useState, useEffect } from "react";
 // pass in callback function
 // when render component -> useEffect is called
 // render twice because of strict mode
+
+// condition has to be used inside useEffect callback function
 const UseEffectBasics = () => {
   const [value, setValue] = useState(0); //preserve the value between renders
   useEffect(() => {
-    document.title = `new message(${value})`; //tab with number(x)
+    if (value >= 1) {
+      document.title = `new message(${value})`; //tab with number(x)
+    }
   }); // runs after every render
   return (
     <>
