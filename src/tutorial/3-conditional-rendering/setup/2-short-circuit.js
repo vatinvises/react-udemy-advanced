@@ -12,6 +12,7 @@ const ShortCircuit = () => {
   // AND if it is false, return the element
 
   //how to toggle
+  //ternary operator ? T:F
   return (
     <>
       {/*    <h1>{firstValue}</h1>
@@ -20,7 +21,7 @@ const ShortCircuit = () => {
       <button className="btn" onClick={() => setError(!isError)}>
         toggle error
       </button>
-      {isError && <h1>Error..</h1>}
+      {isError ? <h2>no error</h2> : <h2>error</h2>}
     </>
   );
 };
