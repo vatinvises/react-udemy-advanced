@@ -1,8 +1,7 @@
 import React from "react";
-import Setup from "./tutorial/3-conditional-rendering/setup/1-multiple-returns";
-import Final from "./tutorial/3-conditional-rendering/final/1-multiple-returns";
-//conditional rendering = display different component based on some condition
-//return differently
+import Setup from "./tutorial/3-conditional-rendering/setup/2-short-circuit";
+import Final from "./tutorial/3-conditional-rendering/final/2-short-circuit";
+
 function App() {
   return (
     <div className="container">
